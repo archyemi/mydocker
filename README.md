@@ -27,3 +27,12 @@ docker build -t uda .
 docker tag uda:latest 406373545287.dkr.ecr.us-east-1.amazonaws.com/uda:latest
 docker push 406373545287.dkr.ecr.us-east-1.amazonaws.com/uda:latest
 
+
+##Starting k3s
+curl -sfL https://get.k3s.io | sh -s - --write-kubeconfig-mode 644
+sudo chmod 644 /etc/rancher/k3s/k3s.yaml
+
+##Prometheus
+wget https://github.com/prometheus/prometheus/releases/download/v2.30.3/prometheus-2.30.3.linux-amd64.tar.gz
+tar xvfz prometheus-*.tar.gz
+cd prometheus-*
