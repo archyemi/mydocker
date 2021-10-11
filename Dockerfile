@@ -7,5 +7,5 @@ WORKDIR /app
 COPY . app.py /app/
 
 # Install packages
-RUN pip install pip==19.3.1 &&\ 
+RUN pip install pip==21.2.4 &&\ 
     pip install -r requirements.txt
