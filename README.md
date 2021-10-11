@@ -36,3 +36,6 @@ sudo chmod 644 /etc/rancher/k3s/k3s.yaml
 wget https://github.com/prometheus/prometheus/releases/download/v2.30.3/prometheus-2.30.3.linux-amd64.tar.gz
 tar xvfz prometheus-*.tar.gz
 cd prometheus-*
+./prometheus --config.file=prometheus.yml
+
+https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/
