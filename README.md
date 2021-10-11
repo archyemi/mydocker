@@ -39,3 +39,7 @@ cd prometheus-*
 ./prometheus --config.file=prometheus.yml
 
 https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/
+
+##Locust
+https://docs.locust.io/en/latest/installation.html
+https://docs.locust.io/en/latest/quickstart.html
